@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,35 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TiW-JH-bUV">
-                                <rect key="frame" x="12" y="47" width="390" height="390"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ao-lr-1Ob" colorLabel="IBBuiltInLabel-Yellow">
+                                <rect key="frame" x="0.0" y="440" width="414" height="422"/>
+                                <color key="backgroundColor" red="0.61684117172703601" green="0.083924625191810334" blue="0.051183900368544921" alpha="0.77169365282879765" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.33386376891473324" green="0.12776812930246376" blue="0.13946090544535025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ao-lr-1Ob" colorLabel="IBBuiltInLabel-Yellow">
-                                <rect key="frame" x="12" y="460" width="390" height="390"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiW-JH-bUV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="395"/>
+                                <color key="backgroundColor" red="0.24106804228252479" green="0.37683629507970329" blue="0.22109769467312687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.61568627450980395" green="0.52156862745098043" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TiW-JH-bUV" firstAttribute="height" secondItem="3ao-lr-1Ob" secondAttribute="height" multiplier="0.93662" id="Ixh-gT-Jzc"/>
+                            <constraint firstItem="3ao-lr-1Ob" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="L9B-Tl-iHH"/>
+                            <constraint firstItem="TiW-JH-bUV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RB9-Qg-txb"/>
+                            <constraint firstItem="3ao-lr-1Ob" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WUI-ug-lBU"/>
+                            <constraint firstItem="TiW-JH-bUV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cPM-5E-YSu"/>
+                            <constraint firstItem="TiW-JH-bUV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cWH-Gz-eti"/>
+                            <constraint firstItem="3ao-lr-1Ob" firstAttribute="top" secondItem="TiW-JH-bUV" secondAttribute="bottom" constant="1" id="htf-Ne-ndN"/>
+                            <constraint firstItem="3ao-lr-1Ob" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qr0-F0-kDZ"/>
+                            <constraint firstItem="TiW-JH-bUV" firstAttribute="width" secondItem="3ao-lr-1Ob" secondAttribute="width" id="viL-GF-CIu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+            <point key="canvasLocation" x="18.75" y="67.605633802816897"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
